@@ -1,0 +1,46 @@
+body {
+    font-family: "Fraunces", serif;
+    margin: auto;
+}
+
+.intro {
+    background-color: rgb(255, 252, 255);
+}
+
+.intro h1 {
+    color: rgb(121, 156, 149);
+    position: absolute;
+    left: 5%;
+    bottom: 55%;
+}
+
+.intro .line2 {
+    color: rgb(121, 156, 149);
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+}
+
+.intro .line3 {
+    color: rgb(121, 156, 149);
+    position: absolute;
+    left: 5%;
+    bottom: 45%;
+}
+
+.headshot {
+    border-radius: 85%;
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 45%;
+}
+
+.experience {
+    background-color: rgb(121, 156, 149);
+    color: rgb(255, 252, 255);
+    display: flex;
+    flex-flow: row wrap;
+}
+
