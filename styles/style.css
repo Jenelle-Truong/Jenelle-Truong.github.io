@@ -18,8 +18,8 @@ body {
     padding-bottom: 45px;
 }
 
-.intro-content {
-    margin-right: 300px;
+.intro-content{
+    margin-right: 300px
 }
 
 .headshot {
@@ -27,6 +27,7 @@ body {
     width: 500px;
     height: auto;
     padding-bottom: 35px;
+    float: right
 }
 
 #resume, #resume:visited {
@@ -62,6 +63,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     flex: 250px;
