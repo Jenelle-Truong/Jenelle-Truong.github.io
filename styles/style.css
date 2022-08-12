@@ -7,35 +7,29 @@ body {
     background-color: rgb(255, 252, 255);
 }
 
-.intro h1 {
+.intro-container {
     color: rgb(160, 182, 174);
-    left: 5%;
-    bottom: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-top: 35px
 }
 
-.intro .line2 {
-    color: rgb(160, 182, 174);
-    font-weight: 300;
-    left: 5%;
-    bottom: 50%;
-}
-
-.intro .line3 {
-    color: rgb(160, 182, 174);
-    font-weight: 300;
-    left: 5%;
-    bottom: 45%;
+.intro-content {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .headshot {
     border-radius: 85%;
-    width: 350px;
+    width: 500px;
     height: auto;
-    right: 5%;
-    bottom: 45%;
+    padding-bottom: 25px;
 }
 
 #resume, #resume:visited {
+    font-size: 25px;
     text-decoration: none;
     color: rgb(160, 182, 174);
     outline: 5px solid rgb(160, 182, 174); 
@@ -51,46 +45,43 @@ body {
 .experience {
     background-color: rgb(160, 182, 174);
     color: rgb(255, 252, 255);
-    display: flex;
-    flex-flow: row wrap;
     width: auto;
     height: auto;
-    justify-content: center;
-    align-items: center;
-    flex: 200px;
 }
 
-.content {
+.experience h1 {
+    padding-top: 25px;
+}
+
+.container {
     background-color: rgb(160, 182, 174);
-    visibility: hidden
+    color: rgb(255, 252, 255);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex: 250px;
+    padding-top: 45px
+}
+
+.container img {
+    margin-left: 25px;
+    flex-shrink: 0;
+}
+
+.container .content {
+    padding-left: 10px;
 }
 
 .card {
+    float: left;
+    margin-right: 10px;
     width: 250px;
     height: 250px;
-    border-radius: 15%;
+    border-radius: 50%;
     position: relative;
     overflow: hidden;
 }
-
-/*.card img {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }*/
-/* .content:hover {
-    visibility: visible;
-}
-
-.card:hover {
-    visibility: hidden
-}*/
 
