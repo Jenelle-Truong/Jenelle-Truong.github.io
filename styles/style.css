@@ -18,6 +18,25 @@ body {
     padding-bottom: 45px;
 }
 
+.intro-content span.cursor {
+    display: inline-block;
+    background-color: rgb(160, 182, 174);
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.intro-content span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% { background-color: rgb(160, 182, 175); }
+    49% { background-color: rgb(160, 182, 175); }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: rgb(160, 182, 175); }
+}
+
 .headshot {
     border-radius: 85%;
     width: 500px;
