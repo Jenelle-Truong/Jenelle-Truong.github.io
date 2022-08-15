@@ -3,10 +3,6 @@ body {
     margin: auto;
 }
 
-.intro {
-    background-color: rgb(255, 252, 255);
-}
-
 .intro-container {
     color: rgb(160, 182, 174);
     display: flex;
@@ -16,12 +12,22 @@ body {
     align-items: center;
     padding-top: 85px;
     padding-bottom: 45px;
+    border: 5px solid pink;
+}
+
+.intro-content {
+    border: 5px solid blue;
+}
+
+.intro-content h1 h2 {
+    overflow: hidden;
 }
 
 .intro-content span.cursor {
     display: inline-block;
-    background-color: rgb(160, 182, 174);
     width: 3px;
+    background-color: rgb(160, 182, 174);
+    margin-left: 0.1rem;
     animation: blink 1s infinite;
 }
 
@@ -30,11 +36,11 @@ body {
 }
 
 @keyframes blink {
-    0% { background-color: rgb(160, 182, 175); }
-    49% { background-color: rgb(160, 182, 175); }
+    0% { background-color: rgb(160, 182, 174); }
+    49% { background-color: rgb(160, 182, 174); }
     50% { background-color: transparent; }
     99% { background-color: transparent; }
-    100% { background-color: rgb(160, 182, 175); }
+    100% { background-color: rgb(160, 182, 174); }
 }
 
 .headshot {
@@ -43,6 +49,7 @@ body {
     height: auto;
     padding-bottom: 35px;
     float: right;
+    display: fixed;
     margin-left: 300px
 }
 
