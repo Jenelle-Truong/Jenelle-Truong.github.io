@@ -1,4 +1,5 @@
 const cursorSpan = document.querySelector(".cursor");
+console.log("cursorSpan is",cursorSpan)
 const textNameSpan = document.querySelector(".type-name");
 const textFooterSpan = document.querySelector(".type-footer");
 
@@ -34,7 +35,7 @@ function type(textToType, typeOfSpan) {
 
 async function typeElements() {
     await type("jenelle truong", "name");
-    await type("let's stay connected", "footer");
+    await type("let's stay connected :)", "footer");
 }
 
 typeElements();

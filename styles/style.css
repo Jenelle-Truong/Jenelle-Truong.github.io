@@ -12,18 +12,13 @@ body {
     align-items: center;
     padding-top: 85px;
     padding-bottom: 45px;
-    border: 5px solid pink;
-}
-
-.intro-content {
-    border: 5px solid blue;
 }
 
 .intro-content h1 h2 {
     overflow: hidden;
 }
 
-.intro-content span.cursor {
+span.cursor {
     display: inline-block;
     width: 3px;
     background-color: rgb(160, 182, 174);
@@ -31,7 +26,7 @@ body {
     animation: blink 1s infinite;
 }
 
-.intro-content span.cursor.typing {
+span.cursor.typing {
     animation: none;
 }
 
@@ -57,26 +52,29 @@ body {
     font-size: 25px;
     text-decoration: none;
     color: rgb(160, 182, 174);
-    outline: 5px solid rgb(160, 182, 174); 
+    outline: 3px solid rgb(160, 182, 174); 
 }
 
 #resume:active, #resume:hover, #resume:focus {
     text-decoration: none;
     color: rgb(255,252, 255);
+    padding: 1px;
     background-color: rgb(121, 156, 149);
-    outline: 5px solid rgb(121, 156, 149);
+    outline: 3px double rgb(121, 156, 149);
 }
 
 .experience {
     background-color: rgb(160, 182, 174);
-    color: rgb(255, 252, 255);
+    color: #fffcff;
     width: auto;
     height: auto;
+    padding-bottom: 20px;
 }
 
 .experience h1 {
     padding-top: 25px;
     padding-left: 10px;
+    /*border: 5px solid blue;*/
 }
 
 .container {
@@ -90,20 +88,39 @@ body {
     justify-content: left;
     align-items: center;
     flex: 250px;
-    padding-top: 45px
-}
-
-.container img {
-    margin-left: 25px;
-    flex-shrink: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    /*border: 5px solid pink;*/
 }
 
 .container .content {
     padding-left: 10px;
 }
 
+details {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+details[open] {
+    display: flex;
+    font-weight: normal;
+}
+#experience1 {
+    display: inline-flex;
+}
+
+/*.container .content p {
+    display: none;
+}
+
+#experience1:hover .dropdown-content{
+    display: flex,
+}*/
+
 .card {
     float: left;
+    margin-left: 25px;
     margin-right: 10px;
     width: 250px;
     height: 250px;
@@ -112,3 +129,47 @@ body {
     overflow: hidden;
 }
 
+/*.card:hover {
+    border: 5px solid rgb(121, 156, 149);
+}*/
+
+.footer-container {
+    color: rgb(160, 182, 174);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    text-align: center;
+    display: absolute;
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+    /*border: 5px solid blue;*/
+    padding-bottom: 25px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bi {
+    font-size: 30px;
+    color: rgb(160, 182, 174);
+}
+
+.bi-linkedin:hover, .bi-github:hover {
+    font-size: 40px;
+}
