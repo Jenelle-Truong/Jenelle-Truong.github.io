@@ -1,6 +1,8 @@
 body {
     font-family: "Fraunces", serif;
-    margin: auto;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
 }
 
 .intro-container {
@@ -49,6 +51,18 @@ span.cursor.typing {
     margin-left: 225px;
 }
 
+@media only screen and (max-width: 600px) {
+    .headshot {
+    border-radius: 85%;
+    width: 375px;
+    height: auto;
+    padding-bottom: 35px;
+    float: right;
+    display: fixed;
+    margin-left: 25px;
+    }
+}
+
 #resume, #resume:visited {
     font-size: 20px;
     text-decoration: none;
@@ -67,8 +81,6 @@ span.cursor.typing {
 .experience {
     background-color: rgb(160, 182, 174);
     color: #fffcff;
-    width: auto;
-    height: auto;
     padding-bottom: 20px;
 }
 
@@ -79,7 +91,6 @@ span.cursor.typing {
 }
 
 .container {
-    background-color: rgb(160, 182, 174);
     color: rgb(255, 252, 255);
     width: auto;
     height: auto;
