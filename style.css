@@ -61,6 +61,11 @@ span.cursor.typing {
     display: fixed;
     margin-left: 25px;
     }
+
+    .container .content {
+        padding-left: 10px;
+        flex-basis: 1550px;
+    }
 }
 
 #resume, #resume:visited {
@@ -86,7 +91,7 @@ span.cursor.typing {
 
 .experience h1 {
     padding-top: 25px;
-    padding-left: 10px;
+    padding-left: 30px;
     font-size: 30px;
 }
 
@@ -105,7 +110,7 @@ span.cursor.typing {
 }
 
 .container .content {
-    padding-left: 10px;
+    padding-left: 35px;
     flex-basis: 1550px;
 }
 
